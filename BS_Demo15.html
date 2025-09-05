@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bootstrap_files/CSS/all.css">
+    <link rel="stylesheet" href="Bootstrap_files/CSS/bootstrap.css">
+    <!-- <link rel="stylesheet" href="../APP HTML/CSS_for_bootstrap/CSS/bootstrap.css"> -->
+    <style>
+        body{
+            background: url("Images/Snow_mountain.png");
+            background-size: cover;
+        }
+        .my_color{
+            background: linear-gradient(45deg,cyan,purple) !important;
+        }
+        .txt_my_color{
+            color: purple !important;
+        }
+        .login_form{
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            transition: all 1s;
+
+        }
+        .login_form:hover{
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+            color: white;
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <p class="fs-2 text-center" >Login <b class="txt_my_color" >Form <i class="fa-solid fa-key fa-beat"></i></b></p>
+            <div class="col-4 mx-auto bg-light p-4 login_form">
+                <div class="input-group">
+                    <span class="input-group-text">Username &nbsp; <i class="fa-solid fa-user txt_my_color"></i></span>
+                    <input type="text" class="form-control" placeholder="Username...">
+                </div>
+                <div class="input-group my-4">
+                    <span class="input-group-text">Password &nbsp; <i class="fa-solid fa-lock txt_my_color"></i></span>
+                    <input type="password" class="form-control" placeholder="Password...">
+                </div>
+                <input type="submit" class="form-control my_color text-light" value="Login">
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
