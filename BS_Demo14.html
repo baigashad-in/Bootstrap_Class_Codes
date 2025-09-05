@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bootstrap_files/CSS/all.css">
+    <link rel="stylesheet" href="Bootstrap_files/CSS/bootstrap.css">
+    <style>
+        body{
+            background: linear-gradient(45deg,cyan,purple);
+        }
+        .my_color{
+            background: linear-gradient(45deg,cyan,purple) !important;
+        }
+        .pt-6{
+            /* padding-top: 200px; */
+            padding-top: 10%;
+        }
+        .login{
+            transition: all 0.5s;
+        }
+        .login:hover{
+            background: black !important;
+            color: white;
+            transition: all 0.5s;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row pt-6 ">
+            <div class="col-4 bg-light mx-auto p-4 rounded-4">
+                <!-- <label> -->
+                    Username
+                    <input type="email" placeholder="Username..." class="form-control w-100 mb-3"><br>
+                <!-- </label><br> -->
+                <!-- <label> -->
+                    Password
+                    <input type="password" placeholder="Password..." class="form-control mb-3"><br>
+                <!-- </label><br> -->
+                <!-- <label> -->
+                    <!-- <input type="submit" value="Login" class="form-control  my_color"> -->
+                    <input type="submit" value="Login" class="btn btn-outline-primary btn-warning">
+                <!-- </label> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
