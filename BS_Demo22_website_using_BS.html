@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bootstrap_files/CSS/all.css">
+    <link rel="stylesheet" href="Bootstrap_files/CSS/bootstrap.css">
+    <style>
+        .bg_my_color{
+            background: linear-gradient(45deg,#FF9800, #EEFF41);
+            color: white !important;
+        }
+        .text_my_color1{
+            color: #FF9800 !important;
+        }
+        .text_my_color2{
+            color: #EEFF41 !important;
+        }
+        .social_media .fa-brands,.social_media .fa-solid{
+            background: linear-gradient(45deg,#FF9800, #EEFF41);
+            color: white !important;
+            font-size: 15px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+            border: 2px solid white;
+            transition: all 0.5s;
+            
+        }
+        .social_media .fa-brands:hover, .social_media .fa-solid:hover{
+            background: transparent !important;
+            color: #FF9800 !important;
+            border: 2px solid #FF9800 !important;
+            transform: rotate(360deg);
+            transition: all 0.5s;
+
+        }
+        #my_menu{
+            background: transparent !important;
+        }
+        .carousel-item img{
+            max-height: 600px;
+        }
+        .aboutContent{
+            padding: 0px 20px;
+            font-size: 18px;
+            text-align: justify;
+        }
+        .justify_text{
+            text-align: justify;
+        }
+        .gallery img{
+            height: 250px;
+            width: 250px;
+        }
+        .card-text i{
+            font-size: 25px;
+            margin-right: 5px;
+            color: #FF9800;
+        }
+        .row_10 a{
+            text-decoration: none;
+            color: white;
+        }
+        .row_10 a:hover{
+            text-decoration: underline;
+            color: #FF9800;
+        }
+        .row_11 a{
+            text-decoration: none;
+            color: #FF9800;
+        }
+        .row_11 a:hover{
+            text-decoration: underline;
+            color: white
+        }
+        .footermenu a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid ">
+        <!-- Start Top row -->
+        <div class="row top_row text-center bg-light py-1">
+            <div class="col-sm-3 social_media"> 
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="col-sm-3 pt-2 social_media"> <i class="fa-solid fa-envelope"></i> Techpilko@gmail.com</div>
+            <div class="col-sm-3 pt-2 social_media"> <i class="fa-solid fa-phone"></i> 7007237006 || 9140563278 </div>
+            <div class="col-sm-3"> 
+                <a href="#" class="btn btn-sm btn-outline bg_my_color"> Contact US</a>
+            </div>
+        </div>
+        <!-- End Top Row -->
+
+
+        <!-- Start Middle Row - Menu-->
+        <div class="row menu_row">
+            <div class="col-sm-10 mx-auto">
+                <div class="row py-2 ">
+                    <div class="col-2 logo_col ">
+                        <img src="Images/code_fire.jpg" class="img-fluid"  style="max-height: 50px;">
+                    </div>
+                    <!-- Start Menu -->
+
+                    <div class="col-10 menu_col ">
+
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary" id = "my_menu">
+                            <div class="container-fluid">
+
+                              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="BS_Demo22a_registaration_website_using_BS.html" target="_blank"><i class="fa-solid fa-clipboard-list"></i> </i>Register</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa-solid fa-id-badge"></i> License</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <i class="fa-solid fa-users"></i> Team</a>
+                                        </li>
+                                        
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-photo-film"></i> 
+                                            Gallery
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="BS_Demo22b_gallery_webpage_BS.html" target="_blank">Image Gallery</a></li>
+                                                <li><a class="dropdown-item" href="#">Audio Gallery</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- <li class="nav-item">
+                                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                        </li> -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="BS_Demo22c_link_webpage.html" target="_blank"> <i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-solid fa-phone"></i>Contact Us</a>
+                                        </li>
+                                    </ul>
+
+                                    <!-- <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form> -->
+                              </div>
+                            </div>
+                          </nav>
+
+                    </div>
+
+                    <!-- End Menu -->
+                </div>
+            </div>
+        </div>
+        <!-- End Middle Row -->
+
+        <!-- Start Third Row -->
+        <div class="row slider_row ">
+            <div class="col-12 p-0">
+                <!-- Start Slider/SlideShow -->
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <img src="Images/Sea and Night Sky.png" class="d-block w-100 img-thumbnail" alt="...">
+                        <div class="carousel-caption d-none d-md-block ">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/coding3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/Islands.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/star_mountains.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            <!-- End Slider/SlideShow  -->
+            </div>
+        </div>
+        <!-- End Third Row -->
+
+        <!-- Start Fourth Row - About Us -->
+         <div class="row row_4 mt-5">
+            <h4 class="text-center mb-5">About <b class="text-danger">Us</b> </h4>
+            <div class="col-sm-6 col-lg-6">
+                <p class="aboutContent">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <p class="aboutContent">
+                    <i class="fa-regular fa-circle-check"></i> 100% Trusted Company in UP. <br>
+                    <i class="fa-regular fa-circle-check"></i> 24x7 Techinal Support. <br>
+                    <i class="fa-regular fa-circle-check"></i> Many Services Available
+                </p>
+                <button class="btn btn-outline-primary ms-4"> Read More</button>
+            </div>
+            <div class="col-sm-6 col-lg-6  ps-5">
+                <img src="Images/about_us.jpg" class=" img-fluid ms-5 w-75">
+            </div>
+         </div>
+        <!-- End Fourth Row - About Us -->
+
+        <!-- Start Fifth Row - Recruiters -->
+         <div class="row recruiters bg-light my-5">
+            <div class="col-12">
+                <marquee behavior = "alternate">
+                    <img src="Images/macreel-Infosoft.png" alt=""> &nbsp;
+                    <img src="Images/icons8-confluence-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-anydesk-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-qgenda-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-adobe-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-stripe-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-prometheus-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-obs-studio-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-apollo-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-musicbee-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-peak-performers-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-paint-3d-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-amazon-40.png" alt=""> &nbsp;
+                    <img src="Images/icons8-diners-club-40.png" alt=""> &nbsp;
+                    <img src="Images/icons8-wellsfargo-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-travis-ci-50.png" alt=""> &nbsp;
+                    <img src="Images/icons8-clickup-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-tableau-software-48.png" alt=""> &nbsp;
+                    <img src="Images/icons8-stackshare-50.png" alt=""> &nbsp;
+                    <img src="Images/icons8-microsoft-48.png" alt=""> &nbsp;
+                </marquee>
+            </div>
+         </div>
+        <!-- End Fifth Row - Recruiters -->
+
+        <!-- Start Sixth Row - Services -->
+         <div class="row service">
+            <h4 class="text-center mt-3">Our <b class="text-danger">Services</b> </h4>
+            <div class="col-10 mx-auto">
+                <div class="row my-5 ps-5">
+                    <div class="col-sm-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/coding2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">AI/ML Solutions</h5>
+                              <p class="card-text justify_text">AI and ML solutions are increasingly being integrated into various industries to solve complex problems, optimize processes, and enable better decision-making. These solutions use machine learning algorithms, neural networks, and other AI techniques to analyze large datasets, predict trends, automate tasks, and provide valuable insights. </p>
+                              <a href="#" class="btn btn-outline-info">Click Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/coding4.jpg" class="card-img-top" style="max-height: 160px;">
+                            <div class="card-body">
+                              <h5 class="card-title">Cybersecurity Solutions</h5>
+                              <p class="card-text justify_text">Cybersecurity solutions are essential for protecting systems, networks, and data from unauthorized access, attacks, or damage. With the increasing reliance on digital infrastructure, businesses, organizations, and individuals must implement a variety of cybersecurity strategies and tools to ensure the safety and privacy of their digital assets. </p>
+                              <a href="#" class="btn btn-outline-info">Click Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/coding.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Web3 Development</h5>
+                              <p class="card-text justify_text">Web3 development refers to building decentralized applications (dApps) and services that interact with blockchain and cryptocurrency technologies. In contrast to traditional centralized systems, Web3 applications aim to empower users by giving them control over their own data and assets using decentralized networks, typically built on blockchain technology. </p>
+                              <a href="#" class="btn btn-outline-info">Click Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5 ps-5">
+                    <div class="col-sm-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/Blue_Beach_Spain.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Software Development</h5>
+                              <p class="card-text justify_text">Software development is the process of designing, creating, testing, and maintaining software applications or systems. It involves a series of steps and methodologies to build functional and efficient software that meets the needs of users or businesses. </p>
+                              <a href="#" class="btn btn-outline-info">Click Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/high_building.jpg" class="card-img-top" style="max-height: 160px;">
+                            <div class="card-body">
+                              <h5 class="card-title">Web Development</h5>
+                              <p class="card-text justify_text">Web development is the process of building, designing, and maintaining websites. It involves a combination of front-end and back-end development skills, as well as knowledge of various programming languages, frameworks, and tools. </p>
+                              <a href="#" class="btn btn-outline-info">Click Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/coding3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mobile Development</h5>
+                              <p class="card-text justify_text">Mobile development refers to the creation of software applications specifically for mobile devices, such as smartphones and tablets. This includes both native apps (built for specific operating systems like Android or iOS) and cross-platform apps.  </p>
+                              <a href="#" class="btn btn-outline-info">Click Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- End Sixth Row - Services -->
+
+        <!-- Start Seventh Row - Gallery -->
+        <div class="row gallery mt-3">
+            <h4 class="text-center mt-3 mb-5"> Picture<b class="text-danger"> Gallery</b> </h4>
+            <div class="col-10 mx-auto">
+                <div class="row mx-auto ps-5">
+                    <div class="col-sm-4 ">
+                        <img src="Images/sq01.jpg" class="img-thumbnail" >
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="Images/sq02.jpg" class="img-thumbnail" >
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="Images/sq03.jpg" class="img-thumbnail "  >
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-3">
+                        <img src="Images/sq04.jpg" class="img-thumbnail"">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="Images/sq05.jpg" class="img-thumbnail">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="Images/sq06.jpg" class="img-thumbnail">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="Images/sq07.png" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="row mt-3 mx-auto ps-5">
+                    <div class="col-sm-4">
+                        <img src="Images/sq08.jpg" class="img-thumbnail" >
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="Images/sq09.jpg" class="img-thumbnail" >
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="Images/sq10.jpg" class="img-thumbnail "  >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Seventh Row - Gallery -->
+
+        <!-- Start Eight Row - Team -->
+            <div class="row team mt-5">
+                <h4 class="text-center mt-3 mb-5"> Our <b class="text-danger"> Team</b> </h4>
+                <div class="col-sm-3">
+                    <div class="card shadow-lg mx-auto" style="width: 18rem;">
+                        <img src="Images/team1.jpg" class="card-img-top img-fluid" >
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Shivam Tiwari</h5>
+                          <p class="card-text text-center">Software Engineer</p>
+                          <p class="card-text text-center">
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i> </a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i> </a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card shadow-lg mx-auto" style="width: 18rem;">
+                        <img src="Images/team2.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Mohit Sharma</h5>
+                          <p class="card-text text-center">AI Engineer</p>
+                          <p class="card-text text-center">
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i> </a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i> </a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card shadow-lg mx-auto" style="width: 18rem;">
+                        <img src="Images/team3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Suresh Raina</h5>
+                          <p class="card-text text-center">Mobile Developer</p>
+                          <p class="card-text text-center">
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i> </a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i> </a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card shadow-lg mx-auto" style="width: 18rem;">
+                        <img src="Images/team4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                          <h5 class="card-title text-center">Rajat Singh</h5>
+                          <p class="card-text text-center">Web3.0 Developer.</p>
+                          <p class="card-text text-center">
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i> </a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i> </a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Eight Row - Team -->
+
+        <!-- Start Ninth Row - Contact us Modal -->
+
+            <!--Start Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button> -->
+            <!-- End Button trigger modal -->
+            
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Your name" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
+                            <input type="number" class="form-control" placeholder="Contact Number" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="Contact Mail" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Your message..</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit Query</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        <!-- End Ninth Row - Contact us Modal -->
+
+        <!-- Start Tenth Row - Footer -->
+         <div class="row row_10 bg-secondary mt-5">
+            <div class="col-sm-4 pt-5">
+                <a href="">
+                     <img src="Images/gem.png" class="img-fluid" height="70px" width="200px" style=" margin-left: 50px;">
+                </a>
+                <a href="">
+                    <img src="Images/startupindia.png" class="img-fluid" height="70px" width="200px" style="margin-top: 10px; margin-left: 50px;">
+                </a>
+                <a href="">
+                    <img src="Images/Playstore.png" class="img-fluid" height="70px" width="200px" style="margin-top: 10px; margin-left: 50px;">
+                </a>
+                <div class="row ps-5">
+                    <p class="fs-5 text-white">Stay Connected</p>
+                    <p class="ms-5 fs-5 ps-5">
+                        <a href="#" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" ><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" ><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" ><i class="fa-brands fa-youtube"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 footermenu">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="text-white" style="margin-top: 50px;">Useful Links</h5>
+                    <ul type="none">
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Home</a></li>
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> About Us</a></li>
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Placement</a></li>
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Contact Us </a></li>
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Our Team</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-white" style="margin-top: 50px;"> &nbsp; </h4>
+                    <ul type="none">
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Online Registration</a></li>
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Our Courses</a></li>
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Feedback</a></li>
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Our Recruiters </a></li>
+                        <li class="mb-2"><a href=""><i class="fa-regular fa-greater-than"></i> Refund Policy</a></li>
+                    </ul>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="col-sm-12 col-lg-4 pt-5">
+                <h5 class="text-white">Contact Address </h5>
+                <p>
+                    <ul type="none" >
+                        <li class="text-white"><i class="fa-solid fa-house text-white"></i> &nbsp; Plot No-43, Behind H.P Petrol Pump, <br> Tedhi Pulia Ring Rd, Sector 5, Vikas Nagar, <br> Lucknow, Uttar Pradesh 226022 </li>
+                        <li><i class="fa-solid fa-phone text-white"></i> &nbsp; <a href="tel:+91-7007237006">+91-7007237006</a></li>
+                        <li><i class="fa-solid fa-phone text-white"></i> &nbsp; <a href="tel:+91-9140444301">+91-9140444301 </a></li>
+                        <li><i class="fa-regular fa-envelope text-white"></i> &nbsp; <a href="email:techpilelko@gmail.com">techpilelko@gmail.com</a></li>
+                    </ul>
+                </p>
+            </div>
+         </div>
+        <!-- End Tenth Row - Footer -->
+
+        <!-- Start Eleventh Row -->
+
+        <div class="row row_11 text-bg-dark text-center">
+            <h5> &nbsp; </h5>
+            <p>Ⓒ 2024 <a href="#">Techpile Technology</a>  2024 | Developed By <a href="#">Techpile-Technical Cell</a> </p>
+            <h6> &nbsp; </h6>
+         </div>
+
+        <!-- End Eleventh Row -->
+    </div>
+
+    <script src="Bootstrap_files/JS/bootstrap.bundle.js"></script>
+</body>
+</html>
